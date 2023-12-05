@@ -1,3 +1,27 @@
 /* FOLHA DE ESTILO CSS*/
+/* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-h1{color: blueviolet;}
+/* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 576px){ /*superiores a 576px*/
+    body{
+        background-color: blue;
+    }
+}
+/* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 768px){ /*superiores a 768px*/
+    body{
+        background-color: rgb(0, 255, 106);
+    }
+}
+/*T ablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 992px){ /*superiores a 992px*/
+    body{
+        background-color: rgb(234, 0, 255);
+    }
+}
+/* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 1200px){ /*superiores a 1200px*/
+    body{
+        background-color: rgb(255, 38, 0);
+    }
+}
