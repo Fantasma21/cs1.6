@@ -1,15 +1,15 @@
 /* FOLHA DE ESTILO CSS*/
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
+/* IMPORTAÇÃO (GOOGLE FONTS) */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
 /*RESET CSS*/
 *{
     margin: 0;
     border: 0;
     padding: 0;
 }
-
-/* IMPORTAÇÃO (GOOGLE FONTS) */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 body{
     font-family: 'Open Sans', sans-serif;
@@ -19,7 +19,7 @@ body{
 /* layout */
 .Container {
     margin: 0 auto;
-    background-color: rgb(225, 255, 196);
+    background-color: rgb(196, 255, 204);
 }
 
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
