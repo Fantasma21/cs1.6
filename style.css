@@ -1,10 +1,35 @@
 /* FOLHA DE ESTILO CSS*/
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
+/*RESET CSS*/
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+/* IMPORTAÇÃO (GOOGLE FONTS) */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+/* layout */
+.Container {
+    margin: 0 auto;
+    background-color: rgb(225, 255, 196);
+}
+
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px){ /*superiores a 576px*/
     body{
         background-color: blue;
+    }
+    /* layout */
+    .Container {
+        max-width: 540px;
     }
 }
 /* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -12,16 +37,28 @@
     body{
         background-color: rgb(0, 255, 106);
     }
+     /* layout */
+     .Container {
+        max-width: 720px;
+    }
 }
 /*T ablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 992px){ /*superiores a 992px*/
     body{
         background-color: rgb(234, 0, 255);
     }
+     /* layout */
+     .Container {
+        max-width: 960px;
+    }
 }
 /* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 1200px){ /*superiores a 1200px*/
     body{
         background-color: rgb(255, 38, 0);
+    }
+     /* layout */
+     .Container {
+        max-width: 1140px;
     }
 }
