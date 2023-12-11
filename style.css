@@ -1,5 +1,4 @@
 /* FOLHA DE ESTILO CSS*/
-/* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 /* IMPORTAÇÃO (GOOGLE FONTS) */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
@@ -19,13 +18,73 @@ body{
 /* layout */
 .Container {
     margin: 0 auto;
-    background-color: rgb(196, 255, 204);
+    
+}
+
+.Flex{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+/* topo do site */
+#topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+/* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* Cabaçalho */
+header {
+    height: 60px;
+}
+
+#logo img {
+    margin: 2px;
+    width: 128px;
+    height: 128px;
+}
+
+#check {
+    display: none;
+}
+
+label {
+    font-size: 3em;
+    padding-right: 15px;
+}
+
+nav ul {
+    list-style: none;
+    background-color: rgb(53, 85, 85);
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 100%;
+    transition: all 0.5s; /* tempo de transição do menu*/
+}
+
+/* esconder menu */
+#check:checked ~ ul {
+    right: 0;
+}
+
+nav ul li {
+    padding: 20px;
+    border-bottom: 1px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
 }
 
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px){ /*superiores a 576px*/
     body{
-        background-color: blue;
+        
     }
     /* layout */
     .Container {
@@ -34,9 +93,7 @@ body{
 }
 /* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 768px){ /*superiores a 768px*/
-    body{
-        background-color: rgb(0, 255, 106);
-    }
+   
      /* layout */
      .Container {
         max-width: 720px;
@@ -44,9 +101,7 @@ body{
 }
 /*T ablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 992px){ /*superiores a 992px*/
-    body{
-        background-color: rgb(234, 0, 255);
-    }
+  
      /* layout */
      .Container {
         max-width: 960px;
@@ -54,11 +109,43 @@ body{
 }
 /* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 1200px){ /*superiores a 1200px*/
-    body{
-        background-color: rgb(255, 38, 0);
-    }
+   
      /* layout */
      .Container {
         max-width: 1140px;
+    }
+
+    /* cabeçario */
+    header {
+        height: 120px;
+    }
+    #logo img {
+        width: 189px;
+        height: 189px;
+        margin-top: 30px;
+    }
+
+    label {
+        display: none;
+    }
+    
+    nav ul {
+        position: static;
+        height: auto;
+        background-color: transparent;
+        margin-top: 50px;
+    }
+
+    nav ul li {
+        float: left;
+        border: 0;
+    }
+
+    nav ul li a {
+        color: #343538;
+    }
+
+    nav ul li a:hover {
+        color: red
     }
 }
